@@ -30,7 +30,7 @@ const config = {
                         options: {
                             plugins: (loader) => [
                                 require('autoprefixer')({
-                                    browsers: ['last 2 versions'],
+                                    browsers: ['last 100 versions'],
                                 }),
                             ]
                         }
