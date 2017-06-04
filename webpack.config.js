@@ -12,6 +12,7 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '../../',
         filename: path.join('styles/', projName, '[name].css')
     },
     module: {
@@ -62,7 +63,7 @@ const config = {
                     loader: 'url-loader',
                     options: {
                         limit: 10000,
-                        name: path.join('images/', projName, '[name].[ext]')
+                        name: 'images/'+ projName +'/[name].[ext]'
                     }
                 }
             }
